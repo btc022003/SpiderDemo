@@ -23,6 +23,7 @@ namespace SpiderDemo
                 htmlDocument.LoadHtml(htmlData);
                 var html = htmlDocument.DocumentNode;
 
+                ///////////使用css选择器选取节点
                 var news_list = html.CssSelect(".news-item");
                 foreach (var item_news in news_list)
                {
